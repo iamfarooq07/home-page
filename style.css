@@ -16,7 +16,6 @@ body {
 
 .container {
     width: 30%;
-    height: 50%;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -84,4 +83,41 @@ a {
 
 a:hover {
     color: white;
+}
+
+/* media query */
+
+@media (max-width: 768px) {
+    .container {
+        width: 60%;
+        height: auto;
+        padding: 20px;
+    }
+
+    input {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+    }
+
+    button {
+        width: 100%;
+        height: 45px;
+    }
+
+    .check a {
+        font-size: 16px;
+    }
 }
