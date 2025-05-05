@@ -11,7 +11,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background:linear-gradient(50deg,#043414, #b6b5b4);
+    background: linear-gradient(50deg, #043414, #b6b5b4);
+}
+.container h1{
+    color: black;
+    font-size: 50px;
 }
 
 .container {
@@ -26,15 +30,11 @@ body {
     background-color: transparent;
 }
 
-.container h2 {
-    color: black;
-}
-
-input {
+.container input {
     width: 380px;
     margin: 10px;
     padding: 20px;
-    background: transparent;
+    background-color: transparent;
     border: none;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 15px;
@@ -42,7 +42,7 @@ input {
 
 input::placeholder {
     color: black;
-    
+
 }
 
 .check a {
@@ -51,6 +51,7 @@ input::placeholder {
     padding: 10px;
     transition: color 0.2s ease-in-out;
 }
+
 .check a:hover {
     color: white;
 }
@@ -58,12 +59,13 @@ input::placeholder {
 button {
     width: 90%;
     height: 50px;
+    font-size: 20px;
     border-radius: 40px;
     border: none;
     margin: 10px 0px;
     background: #000;
     color: white;
-    transition: background-color 0.2s ease-in-out; 
+    transition: background-color 0.2s ease-in-out;
 }
 
 button:hover {
@@ -86,6 +88,18 @@ a:hover {
 }
 
 /* media query */
+@media (max-width: 1322px) {
+    .container {
+        width: 30%;
+        height: auto;
+        padding: 10px;
+    }
+
+    input {
+        width: 100%;
+        padding: 18px;
+    }
+}
 
 @media (max-width: 768px) {
     .container {
@@ -98,6 +112,7 @@ a:hover {
         width: 100%;
         padding: 15px;
     }
+
 }
 
 @media (max-width: 480px) {
